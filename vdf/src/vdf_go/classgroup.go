@@ -30,18 +30,18 @@ func NewClassGroupFromAbDiscriminant(a, b, discriminant *big.Int) *ClassGroup {
 }
 
 func NewClassGroupFromBytesDiscriminant(buf []byte, discriminant *big.Int) (*ClassGroup, bool) {
-	int_size_bits := discriminant.BitLen()
+	intSizeBits := discriminant.BitLen()
 
 	//add additional one byte for sign
-	int_size := (int_size_bits + 16) >> 4
+	intSize := (intSizeBits + 16) >> 4
 
 	//make sure the input byte buffer size matches with discriminant's
-	if len(buf) != int_size*2 {
+	if len(buf) != intSize*2 {
 		return nil, false
 	}
 
-	a := decodeTwosComplement(buf[:int_size])
-	b := decodeTwosComplement(buf[int_size:])
+	a := decodeTwosComplement(buf[:intSize])
+	b := decodeTwosComplement(buf[intSize:])
 
 	return NewClassGroupFromAbDiscriminant(a, b, discriminant), true
 }
