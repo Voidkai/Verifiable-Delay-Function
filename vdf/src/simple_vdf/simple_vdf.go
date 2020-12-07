@@ -49,7 +49,7 @@ func Setup(security uint64) *big.Int {
 
 //isSavePrime takes a prime p and checks if (p-1)/2 is a prime then outputs true
 func isSavePrime(prime *big.Int) bool {
-	tmp := new(big.Int).Sub(prime, bigOne)
+	tmp := new(big.Int).Sub(prime, bigOne) // prime - bigOne = prime -
 	tmp.Div(tmp, bigTwo)
 	return tmp.ProbablyPrime(20)
 }
