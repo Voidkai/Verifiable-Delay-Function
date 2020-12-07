@@ -111,7 +111,6 @@ func (in *Instance) NaiveSolve() {
 	xii := new(big.Int).Exp(in.challenge, r1, in.rsaModulus)
 	xii.Mul(xii, mu1)
 	xii.Mod(xii, in.rsaModulus)
-
 	yii := new(big.Int).Exp(mu1, r1, in.rsaModulus)
 	yii.Mul(yii, y1)
 	yii.Mod(yii, in.rsaModulus)
