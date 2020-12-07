@@ -10,8 +10,7 @@ import (
 )
 
 func TestProof(t *testing.T) {
-	max := new(big.Int).SetUint64(1 << 63)
-	seed, err := cr.Int(cr.Reader, max)
+	seed, err := cr.Int(cr.Reader, new(big.Int).SetUint64(1 << 63))
 	if err != nil {
 		t.Error("random failed")
 	}

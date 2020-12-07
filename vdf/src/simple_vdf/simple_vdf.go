@@ -44,14 +44,21 @@ func Setup(security uint64) *big.Int {
 
 	rsaModulus := new(big.Int).Mul(p, q)
 	return rsaModulus
-
 }
 
 //isSavePrime takes a prime p and checks if (p-1)/2 is a prime then outputs true
 func isSavePrime(prime *big.Int) bool {
-	tmp := new(big.Int).Sub(prime, bigOne) // prime - bigOne = prime -
+	tmp := new(big.Int).Sub(prime, bigOne) // prime - bigOne = prime - 1
 	tmp.Div(tmp, bigTwo)
 	return tmp.ProbablyPrime(20)
+}
+
+type Instance struct {
+	rsaModulus, challenge *big.Int
+	T                     uint64
+	y                     *big.Int
+	mu                    []*big.Int
+	securityBits          uint64
 }
 
 //Generate takes a rsaModulus of two safe primes, a security parameter and the squaring parameter T
@@ -90,14 +97,6 @@ func Generate(rsaModulus *big.Int, T, security uint64) Instance {
 		securityBits: security,
 	}
 
-}
-
-type Instance struct {
-	rsaModulus, challenge *big.Int
-	T                     uint64
-	y                     *big.Int
-	mu                    []*big.Int
-	securityBits          uint64
 }
 
 //NaiveSolve runs on a instance that has been instanciated via Generate before
