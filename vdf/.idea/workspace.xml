@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8c28a39-e9f0-4a0b-b76c-22a7ae1f6666" name="Default Changelist" comment="" />
+    <list default="true" id="e8c28a39-e9f0-4a0b-b76c-22a7ae1f6666" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/Commands.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/Commands.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.bbl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.blg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.nav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.snm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/VDF.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/figure/auction.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/figure/secretdiary.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VDF_Paper&amp;Beam/LaTeX PPT - report/figure/secretkey.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
