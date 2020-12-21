@@ -8,7 +8,7 @@ import (
 
 func main(){
 	var security uint64 = 300
-	n := 25
+	n := 24
 	T := uint64(1 << 25)
 	N := new(big.Int).Set(Setup(security))
 
